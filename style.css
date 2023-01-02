@@ -1,0 +1,266 @@
+/* general */
+
+body {
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* Grid Area */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    border: 1px solid;
+
+}
+
+div {
+    border: 1px solid;
+}
+
+.grid-header {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: auto;
+    background-color: rgb(97, 160, 174);
+}
+
+
+.grid-header-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 100px auto;
+}
+
+.grid-content-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+
+
+
+
+
+
+
+
+/*----TEKS---- */
+
+.tfont1 {
+    font-family: 'Yantramanav', sans-serif;
+}
+
+.tfont2 {
+    font-family: 'Alexandria', sans-serif;
+}
+
+.tfont3 {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+
+.tsize1 {
+    font-size: 15px;
+}
+
+.tsize2 {
+    font-size: 20px;
+}
+
+.tsize3 {
+    font-size: 25px;
+}
+
+.tsize4 {
+    font-size: 30px;
+}
+
+#tsize1 {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+
+.tcolor1 {
+    color: black;
+}
+
+.tcolor2 {
+    color: black;
+}
+
+.tcolor3 {
+    color: black;
+}
+
+.tcolor4 {
+    color: black;
+}
+
+.mpara {
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 15px;
+}
+
+.ul-1 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+
+/* 
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----RESPONSIF AREA */
+
+
+@media (max-width: 320px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-header{
+        text-align: center;
+    }
+
+    #rp1 image{
+        text-align: center;
+        justify-content: center;
+
+        display: grid;
+    }
+
+    #rp2 {
+        display: none;
+    }
+
+@media (max-width: 375px) {
+    .grid-header {
+        text-align: center;
+    }
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+
+    }
+}
+
+
+@media (max-width: 425px) {
+    .grid-header {
+        text-align: center;
+    }
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+
+    }
+}
+}
