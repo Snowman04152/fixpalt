@@ -1,0 +1,76 @@
+.table {
+    margin-left: 25px;
+    margin-right: 25px;
+    border: 2px solid #72ddf7;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.fix-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: linear-gradient(to right, #72ddf7, #a8dadc);
+}
+
+.tbody {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 200px;
+    overflow-y: scroll;
+    grid-gap: 20px;
+
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.fix-div>div {
+    padding: 15px;
+
+}
+
+.first>div {
+    padding: 10px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+.second>div {
+    padding: 10px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+.third>div {
+    padding: 10px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 700px) {
+    .fix-div {
+        font-size: 14px;
+    }
+
+    .tbody {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .fix-div {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .fix-div {
+        font-size: 10px;
+    }
+}
